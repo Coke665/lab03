@@ -43,13 +43,13 @@ str(jan_feb_flights)
 
 ```{r}
 # which columns are integer
-
+select(jan_feb_flights,where(~is.integer(.x)))
 
 # which columns are double
-
+select(jan_feb_flights,where(~is.double(.x)))
 
 # which columns are character
-
+select(jan_feb_flights,where(~is.character(.x)))
 
 ```
 
